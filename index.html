@@ -8,26 +8,35 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="loading">
+    <div class="intro" id="intro">
+      <div class="intro-logo">Kopi<span>Social</span>.</div>
+      <div class="intro-bar"><span></span></div>
+    </div>
+
     <header>
       <section class="navbar-container">
         <nav class="navbar-content">
           <a href="#" class="nav-logo">Kopi<span>Social</span>.</a>
+          <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#menu">menu</a>
+            <a href="#produk">Produk</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"
+              ><i data-feather="shopping-cart"></i
+            ></a>
+            <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
+          </div>
+          <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box"><i data-feather="search"></i></label>
+          </div>
         </nav>
-        <div class="navbar-nav">
-          <a href="#">Home</a>
-          <a href="#about">Tentang Kami</a>
-          <a href="#menu">menu</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div class="navbar-extra">
-          <a href="#" id="search"><i data-feather="search"></i></a>
-          <a href="#" id="shopping-cart"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-          <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
-        </div>
       </section>
     </header>
 
@@ -96,6 +105,45 @@
         </div>
       </section>
 
+      <section class="products" id="produk">
+        <h2><span>Produk</span> Kami</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero aliquid
+          maxime reprehenderit nesciunt minima. Labore.
+        </p>
+
+        <div class="row">
+          <div class="product-card">
+            <!-- Area Ikon Aksi (Melayang/Hover Efek) -->
+            <div class="product-icon">
+              <a href="#"><i data-feather="shopping-cart"></i></a>
+              <a href="#"><i data-feather="eye"></i></a>
+            </div>
+
+            <!-- Area Gambar -->
+            <div class="product-img">
+              <img src="images/product/product1.jpg" alt="Produk 1" />
+            </div>
+
+            <!-- Area Konten Detail Produk -->
+            <div class="product-content">
+              <h3 class="product-title">Produk 1</h3>
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+              </div>
+              <div class="product-price">
+                <span class="current-price">IDR 15K</span>
+                <span class="old-price">IDR 25K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact">
         <h2><span>Contact</span> Kami</h2>
         <p>
@@ -110,7 +158,7 @@
             referrerpolicy="strict-origin-when-cross-origin"
             class="map"
           ></iframe>
-          
+
           <form action="" method="post">
             <div class="input-group">
               <i data-feather="user"></i>
